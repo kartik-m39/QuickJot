@@ -168,7 +168,7 @@ function strikeTask(checkbox){
 }
 
 
-const api_url = process.env.API_URL || 'http://localhost:3000/api/quote';  // Default to local URL if no env var is set
+const api_url = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api/quote';
 
 async function getQuote(api_url){
     try{
