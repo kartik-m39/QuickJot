@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#0d375c" />
+
+  <!-- Checkmark Icon -->
+  <path d="M20 32l8 8 16-16" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Title or Symbol -->
+  <text x="50%" y="75%" fill="#71828b" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">ToDo</text>
+</svg>

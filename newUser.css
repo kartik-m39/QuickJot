@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(2, 36, 65);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #185285;
+    width: 550px;
+    padding: 75px;
+    border: 1px solid rgb(93, 92, 92);
+    border-radius: 10px;
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.1);
+    background: #062a45;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #dfdfdf;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b0c4de;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #041e35;
+    color: #dfdfdf;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.input-group input:hover {
+    background-color: #133755;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Success Popup Style */
+.success-popup {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8ebf90;
+    color: white;
+    padding: 7px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+}
+
+.popup-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.popup-message {
+    font-size: 16px;
+}
+
+/* Error Popup Style */
+.error-popup {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #af4135;
+    color: white;
+    padding: 7px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    z-index: 1000;
+}
+
+.error-popup .popup-content {
+    display: flex;
+    align-items: center;
+}
+
+.error-popup .popup-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.error-popup .popup-message {
+    font-size: 16px;
+}

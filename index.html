@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickJot</title>
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">QuickJot</div>
+        <button id="sign-in-btn" class="nav-btn">Sign In</button>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Left Section for Task GIF -->
+        <div class="task-section">
+            <img src="Images/4.jpg" alt="Task Being Added" class="task-gif">
+            <video autoplay muted playsinline class="task-video">
+                <source src="Images/QuickJot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+
+        <!-- Right Section for Welcome Text and Register Button -->
+        <div class="welcome-section">
+            <h1>Welcome to QuickJot</h1>
+            <h2>– Your all-in-one place to jot down ideas, stay organized, and boost productivity.</h2>
+            <p>We know you’ve got a lot on your mind... but forgetful moments seem to bring you here! Let’s help you stay on top of things!</p>
+            <button id="register-btn" class="register-btn">Register</button>
+
+            <!-- Sign-in Form (Initially Hidden) -->
+            <div id="sign-in-form" class="sign-in-form hidden">
+                <div class="form-container">
+                    <form id="sign-in-form-inner">
+                        <h1>Login to Quickjot</h1>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    
+                        <button type="submit" >Sign In</button>
+                    </form>
+                    <p id="new-user">New to the site? <a href="newUser.html" id="new-user-signup">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

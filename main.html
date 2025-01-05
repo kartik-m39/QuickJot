@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickJot</title>
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="profile">
+        <h2>Profile</h2>
+        <ul>
+            <li id="name"></li>
+            <li id="email"></li>
+            <li id="date"></li>
+        </ul>
+        <button onclick="logout()">Sign Out</button>
+    </div>
+
+    <div class="main-container">
+        <div class="top-container">
+            <h1 id="greeting"></h1>
+            <div id="random-quote">
+                <p id="quote"></p>
+                <p id="author"></p>
+                <p id = "source"></p>
+            </div>
+        </div>
+
+        <div class="bottom-container">
+            <div class="task-input">
+                <input type="text" id="task" placeholder="Add a new task...">
+                <button onclick="populateTask()">Add Task</button>
+            </div>
+            <ul id="task-list">
+                <!-- Task items will populate here -->
+            </ul>
+        </div>
+    </div>
+
+    <button class="profile-button hidden" onclick="toggleProfile()">Profile</button>
+    <div class="profile-container hidden" id="profileContainer">
+        
+        <h2>Profile</h2>
+        <button onclick="logout()">Sign Out</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
