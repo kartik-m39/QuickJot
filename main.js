@@ -168,7 +168,8 @@ function strikeTask(checkbox){
 }
 
 
-const api_url = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api/quote';
+const api_url = 'https://quick-jot.vercel.app/api/quote'; // Use the actual URL
+
 
 async function getQuote(api_url){
     try{
